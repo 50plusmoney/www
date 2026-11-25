@@ -52,11 +52,11 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
 .hd{display:flex;align-items:center;gap:20px;min-height:68px}
 .hd .logo-t{font-size:27px;text-decoration:none;flex:none}
-.nav{display:flex;gap:18px;margin-left:auto;flex-wrap:wrap}
+.nav{display:flex;gap:18px;margin-left:auto;flex-wrap:nowrap}
 .nav a{font-family:var(--pf);font-style:italic;font-size:15px;text-decoration:none;color:var(--navy);line-height:1.2;text-align:center}
 .nav a small{display:block;font-family:var(--go);font-style:normal;font-size:10px;color:var(--sub);margin-top:3px}
 .hd .member{font-size:13px;color:var(--navy);text-decoration:none;border:1.5px solid var(--navy);border-radius:99px;padding:6px 14px;white-space:nowrap;flex:none}
-@media (max-width:900px){.nav{display:none}.hd .member{margin-left:auto}}
+@media (max-width:1100px){.nav{display:none}.hd .member{margin-left:auto}}
 @media (max-width:400px){.hd{gap:10px}.hd .logo-t{font-size:23px}.hd .member{font-size:12px;padding:6px 12px}.hd .member .app-only{display:none}}
 
 /* ボタン */
